@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "gh-pages": "^3.2.3",
+    "orbit-controls-es6": "^2.0.1",
     "three": "^0.136.0"
   }
 }
