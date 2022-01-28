@@ -95,7 +95,7 @@ const spaceTexture = new THREE.TextureLoader().load("space.jpg");
 scene.background = spaceTexture;
 
 // Avatar
-const pedroTexture = new THREE.TextureLoader().load("pedro2.jpg");
+const pedroTexture = new THREE.TextureLoader().load("Pedro2.jpg");
 
 const pedro = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
