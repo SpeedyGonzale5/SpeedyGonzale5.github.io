@@ -51,6 +51,11 @@ header {
   margin-bottom: var(--spacing);
 }
 
+.light {
+  background-color: aliceblue;
+  color: black;
+}
+
 section {
   grid-column: 2 / 8;
   padding: 1rem;
