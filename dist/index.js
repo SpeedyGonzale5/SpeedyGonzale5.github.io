@@ -91,11 +91,11 @@ function addStar() {
 Array(200).fill().forEach(addStar);
 
 // Scene Background
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+const spaceTexture = new THREE.TextureLoader().load("img/space.jpg");
 scene.background = spaceTexture;
 
 // Avatar
-const pedroTexture = new THREE.TextureLoader().load("Pedro2.jpg");
+const pedroTexture = new THREE.TextureLoader().load("img/pedro.jpg");
 
 const pedro = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -106,7 +106,7 @@ scene.add(pedro);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("neptune1989.jpg");
+const moonTexture = new THREE.TextureLoader().load("img/neptune1989.jpg");
 
 // Load Normal onto the photo
 // const normalTexture = new THREE.TextureLoader().load("normal.jpg");
