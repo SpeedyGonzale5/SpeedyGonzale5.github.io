@@ -50,14 +50,14 @@ scene.add(torusKnot);
 torusKnot.position.z = 20;
 torusKnot.position.setX(10);
 
-// Taurus
+// Taurus (Not in Use)
 const geometry = new THREE.TorusBufferGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({
   color: 0xff6347,
   //   // wireframe: true (MeshBasicMaterial),
 });
 const torus = new THREE.Mesh(geometry, material);
-scene.add(torus);
+// scene.add(torus);
 
 // Lighting
 const pointLight = new THREE.PointLight(0xffffff);
@@ -95,7 +95,7 @@ const spaceTexture = new THREE.TextureLoader().load("space.jpg");
 scene.background = spaceTexture;
 
 // Avatar
-const pedroTexture = new THREE.TextureLoader().load("pedro.PNG");
+const pedroTexture = new THREE.TextureLoader().load("pedro2.jpg");
 
 const pedro = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -154,6 +154,10 @@ function animate() {
   halo.rotation.z += 0.01;
 
   moon.rotation.x += 0.005;
+
+  torusKnot.rotation.x += 0.005;
+  torusKnot.rotation.y += 0.0001;
+  torusKnot.rotation.z += 0.005;
 
   controls.update();
 
