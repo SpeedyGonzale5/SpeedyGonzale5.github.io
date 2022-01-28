@@ -39,7 +39,7 @@ scene.add(halo);
 // halo.position.setX(-10);
 
 //KnotTaurus
-const torusknotgeometry = new THREE.TorusKnotGeometry(5, 0.5, 103, 7, 12, 9);
+const torusknotgeometry = new THREE.TorusKnotGeometry(3, 0.5, 103, 7, 12, 9);
 const material2 = new THREE.MeshStandardMaterial({
   color: 0x6203fc,
   // wireframe: true,
@@ -48,7 +48,7 @@ const torusKnot = new THREE.Mesh(torusknotgeometry, material2);
 scene.add(torusKnot);
 
 torusKnot.position.z = 20;
-torusKnot.position.setX(10);
+torusKnot.position.setX(7);
 
 // Taurus (Not in Use)
 const geometry = new THREE.TorusBufferGeometry(10, 3, 16, 100);
@@ -70,7 +70,8 @@ scene.add(pointLight, ambientLight);
 //Helpers
 const lightHelper = new THREE.PointLightHelper(pointLight);
 const gridHelper = new THREE.GridHelper(200, 50);
-scene.add(lightHelper, gridHelper);
+// scene.add(lightHelper, gridHelper);
+scene.add(gridHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -121,8 +122,8 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-moon.position.z = 30;
-moon.position.setX(-10);
+moon.position.z = 40;
+moon.position.setX(-7);
 
 //Scroll
 function moveCamera() {
